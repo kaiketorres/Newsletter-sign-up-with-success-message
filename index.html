@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fe44525d26.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main>
+      <header id="mainHeader">
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="Illustration"
+          srcset="
+            assets/images/illustration-sign-up-mobile.svg 1024w,
+            assets/images/illustration-sign-up-desktop.svg 1025w
+          "
+        />
+      </header>
+
+      <section id="mainSection">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <p>
+          <i class="fa-solid fa-check"></i> Product discovery and building what
+          matters
+        </p>
+
+        <p>
+          <i class="fa-solid fa-check"></i> Measuring to ensure updates are a
+          success
+        </p>
+
+        <p><i class="fa-solid fa-check"></i> And much more!</p>
+
+        <section class="email">
+          <h5>Email address</h5>
+
+          <p class="emailError" id="emailError"></p>
+        </section>
+
+        <form action="">
+          <div class="input-container" id="input-container">
+            <input type="email" placeholder="email@company.com" id="email" />
+          </div>
+        </form>
+
+        <button id="submitEmail" class="sendEmail">
+          Subscribe to monthly newsletter
+        </button>
+      </section>
+      <div class="modal" id="modal">
+        <div class="modal-overlay">
+          <div class="modal-content">
+            <i class="fa-solid fa-check"></i>
+            <h1>Thanks for subscribing!</h1>
+            <p id="confirmationEmail"></p>
+            <button class="closeModal" id="closeModal">Dismiss message</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
